@@ -1,13 +1,26 @@
-import {action, observable} from 'mobx'
-import api from './api'
+import {action, observable, decorate} from 'mobx'
 
-class St {
-  @observable.ref receipe = {};
+class MainStore {
+  receipe = {};
+  category = {items:[], title: ''};
 
-  @action setReg = (rcp) => {
+  setRecipe = (rcp) => {
     this.receipe = rcp
+    // console.log('this receipe',this.receipe)
+  }
+
+  setCategory = (c) => {
+    this.category = require(`../assets/full${c.source}`)
+    // console.log('this category',this.category)
   }
 }
 
-const Store = new St();
+decorate(MainStore, {
+  receipe: observable.ref,
+  category: observable.ref,
+  setRecipe: action,
+  setCategory: action
+})
+
+const Store = new MainStore();
 export default Store;

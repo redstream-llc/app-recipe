@@ -1,0 +1,125 @@
+{
+    "title": "Segundos",
+    "items": [
+        {
+            "id": 29624,
+            "title": "Cazuela de pescado y gambas",
+            "image": "\/images\/29624.jpg",
+            "source": "\/recipe\/29624.json"
+        },
+        {
+            "id": 28708,
+            "title": "Pollo al horno con curry",
+            "image": "\/images\/28708.jpg",
+            "source": "\/recipe\/28708.json"
+        },
+        {
+            "id": 27643,
+            "title": "Tortilla de patatas y calabac\u00edn",
+            "image": "\/images\/27643.jpg",
+            "source": "\/recipe\/27643.json"
+        },
+        {
+            "id": 28055,
+            "title": "Pollo al ajillo",
+            "image": "\/images\/28055.jpg",
+            "source": "\/recipe\/28055.json"
+        },
+        {
+            "id": 29843,
+            "title": "Alb\u00f3ndigas rellenas de mozzarella",
+            "image": "\/images\/29843.jpg",
+            "source": "\/recipe\/29843.json"
+        },
+        {
+            "id": 28433,
+            "title": "Pescado en salsa al microondas",
+            "image": "\/images\/28433.jpg",
+            "source": "\/recipe\/28433.json"
+        },
+        {
+            "id": 30007,
+            "title": "pescado rebozado crujiente",
+            "image": "\/images\/30007.jpg",
+            "source": "\/recipe\/30007.json"
+        },
+        {
+            "id": 28651,
+            "title": "Bacalao al ajillo con patatas",
+            "image": "\/images\/28651.jpg",
+            "source": "\/recipe\/28651.json"
+        },
+        {
+            "id": 29772,
+            "title": "Quich\u00e9 de espinacas y mozzarella",
+            "image": "\/images\/29772.jpg",
+            "source": "\/recipe\/29772.json"
+        },
+        {
+            "id": 28820,
+            "title": "Redondo de ternera con setas",
+            "image": "\/images\/28820.jpg",
+            "source": "\/recipe\/28820.json"
+        },
+        {
+            "id": 27698,
+            "title": "Dorada con salsa de pimientos del piquillo",
+            "image": "\/images\/27698.jpg",
+            "source": "\/recipe\/27698.json"
+        },
+        {
+            "id": 29612,
+            "title": "Dorada al horno",
+            "image": "\/images\/29612.jpg",
+            "source": "\/recipe\/29612.json"
+        },
+        {
+            "id": 27724,
+            "title": "At\u00fan con salsa de tomate",
+            "image": "\/images\/27724.jpg",
+            "source": "\/recipe\/27724.json"
+        },
+        {
+            "id": 29446,
+            "title": "Merluza en salsa con huevos de codorniz",
+            "image": "\/images\/29446.jpg",
+            "source": "\/recipe\/29446.json"
+        },
+        {
+            "id": 29651,
+            "title": "Ternera en salsa con verduras",
+            "image": "\/images\/29651.jpg",
+            "source": "\/recipe\/29651.json"
+        },
+        {
+            "id": 27826,
+            "title": "Quiche de bacon y champi\u00f1ones",
+            "image": "\/images\/27826.jpg",
+            "source": "\/recipe\/27826.json"
+        },
+        {
+            "id": 27879,
+            "title": "Pollo con gambas",
+            "image": "\/images\/27879.jpg",
+            "source": "\/recipe\/27879.json"
+        },
+        {
+            "id": 27955,
+            "title": "Solomillo en salsa de vino tinto",
+            "image": "\/images\/27955.jpg",
+            "source": "\/recipe\/27955.json"
+        },
+        {
+            "id": 28780,
+            "title": "Osobuco de pavo en olla r\u00e1pida",
+            "image": "\/images\/28780.jpg",
+            "source": "\/recipe\/28780.json"
+        },
+        {
+            "id": 27720,
+            "title": "Alb\u00f3ndigas en salsa de cebolla",
+            "image": "\/images\/27720.jpg",
+            "source": "\/recipe\/27720.json"
+        }
+    ]
+}
