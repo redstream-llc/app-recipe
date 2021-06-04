@@ -1,35 +1,51 @@
-import React, { useEffect } from 'react';
-import {ReceipeComponent, HeaderComponent} from '../../components'
+import React, {useEffect, useState} from 'react';
+import {RecipeComponent, HeaderComponent} from '../../components'
 import {Container, Row, Col} from 'react-bootstrap';
-import {observer} from 'mobx-react'
-import Store from '../../store/store'
-import categories from '../../assets/data/category/index.json'
+import fetchData from "../../utils/fetchData";
+import {useHistory} from "react-router-dom";
 
-const Home = observer(() => {
-  const {category, setCategory} = Store
+const Home = () => {
 
-  useEffect(()=>{
-    if(!category?.title) {
-      setCategory(categories[0])
-    }
-  },[category])
+  const history = useHistory();
+  const [category, setCategory] = useState(null);
+  const [items, setItems] = useState([]);
 
-  return ( 
-    <div className='wrapper'> 
+  useEffect(() => {
+    console.log('ss');
+    (async () => {
+
+      if(history.location.pathname.match(/category/)) {
+        const id = history.location.pathname.split('/')[2];
+        const cat = await fetchData(`/category/${id}.json`);
+        setCategory(cat);
+        setItems(cat.items);
+      } else {
+        const cats = await fetchData('/category/index.json');
+        const cat = await fetchData(cats[0].source);
+        setCategory(cat);
+        setItems(cat.items);
+      }
+
+    })();
+  }, [history]);
+
+
+  if(!category) return null;
+  return (
+    <div className='wrapper'>
       <HeaderComponent/>
 
-      {/* <img src={require('../../assets/banner.jpg').default} alt='banner' width={'100%'} style={{marginBottom: 30}}/> */}
-      <div className='banner'/>
+       <img src="banner.jpg" alt='banner' width={'100%'} style={{marginBottom: 30}}/>
 
       <Container fluid>
         <Row>
           <Col>
-            <h1>{category?.title}</h1>
+            <h1>{category.title}</h1>
 
             <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
               {
-                category?.items.length > 0 &&
-                category?.items.map((item)=>(<ReceipeComponent recipe={item}/>))
+                items.length > 0 &&
+                items.map((item)=>(<RecipeComponent key={item.id} recipe={item}/>))
               }
             </div>
           </Col>
@@ -37,6 +53,6 @@ const Home = observer(() => {
       </Container>
     </div>
   );
-})
+}
 
 export default Home;

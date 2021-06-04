@@ -11,5 +11,22 @@
 }
 
 h1 {
-  color: red;
+  color: #000000 !important;
+}
+
+.btn-primary {
+  border: 0 !important;
+  color: #FFFFFF !important;
+  background-color: #0f6674 !important;
+}
+
+.navbar {
+  background-color: #0f6674 !important;
+}
+.navbar-brand {
+  color: #FFFFFF !important;
+}
+
+a {
+  color: #000000 !important;
 }

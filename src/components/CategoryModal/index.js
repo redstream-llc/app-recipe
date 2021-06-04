@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
 import {Modal} from 'react-bootstrap';
-import categories from '../../assets/data/category/index.json'
-import Store from '../../store/store'
+import fetchData from "../../utils/fetchData";
 
 const CategoryModal = (props) => {
   const history = useHistory()
-  const {setCategory} = Store
+
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const cats = await fetchData('/category/index.json');
+      setCategories(cats)
+    })();
+  }, []);
+
+
   return (
     <Modal
       {...props}
@@ -20,16 +29,15 @@ const CategoryModal = (props) => {
       <Modal.Body>
       {
         categories.map((c) => (
-          <div
+          <div key={c.id}
             onClick={()=>{
-              history.push('/')
-              setCategory(c)
-              props.onHide()
+              history.push('/category/' + c.id);
+              window.location.reload();
             }}
             style={{padding: 5, textAlign: 'center', width: '100%'}}
           >
-            {c.title}
-          </div>
+             {c.title}
+           </div>
         ))
       }
       </Modal.Body>

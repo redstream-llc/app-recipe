@@ -1,7 +1,7 @@
 import Home from './Home'
-import Receipe from './Receipe'
+import Recipe from './Receipe'
 
 export {
   Home,
-  Receipe
+  Recipe
 }

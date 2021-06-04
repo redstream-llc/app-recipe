@@ -5,14 +5,14 @@ import CategoryModal from '../CategoryModal'
 
 
 
-const HeaderComponent = () => {
+const HeaderComponent = (props) => {
   const [modalShow, setModalShow] = React.useState(false);
-  
-  return (
-    <Navbar bg="dark" variant="dark" >
-      <Navbar.Brand href='/'>Recipes</Navbar.Brand>
 
-      <div 
+  return (
+    <Navbar>
+      <Navbar.Brand href='/'>Recetasdecocina</Navbar.Brand>
+
+      <div
         onClick={()=>{
         setModalShow(true)
         }}

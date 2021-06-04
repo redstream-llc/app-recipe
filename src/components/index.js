@@ -1,7 +1,7 @@
-import ReceipeComponent from './ReceipeCopmonent'
+import RecipeComponent from './ReceipeComponent'
 import HeaderComponent from './HeaderComponent'
 
 export {
-  ReceipeComponent,
+  RecipeComponent,
   HeaderComponent
 }

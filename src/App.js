@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import {Home, Receipe} from './pages'
+import {Home, Recipe} from './pages'
 
 const App = () => {
   return (
@@ -16,7 +16,10 @@ const App = () => {
               <Home />
             </Route>
             <Route path="/receipe/:id">
-              <Receipe />
+              <Recipe />
+            </Route>
+            <Route path="/category/:id">
+              <Home />
             </Route>
           </Switch>
         </Router>
