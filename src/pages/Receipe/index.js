@@ -21,14 +21,22 @@ const Receipe = observer(() => {
                 <br/>
                 {receipe?.ingredients.length > 0 &&
                   receipe?.ingredients.map((i, idx) => (
-                  <Card.Text style={{textAlign: 'left'}}> <b>{idx+1}.</b> {i} </Card.Text>
+                  <Card.Text style={{textAlign: 'left'}}> <b>{idx+1}.</b> 
+                    <span dangerouslySetInnerHTML={{
+                    __html:i,
+                    }}/> 
+                  </Card.Text>
                   ))
                 }
 
                 <br/>
                 {receipe?.recipeInstructions.length > 0 &&
                   receipe?.recipeInstructions.map((i, idx) => (
-                  <Card.Text style={{textAlign: 'left'}}> <b>{idx+1}.</b> {i} </Card.Text>
+                  <Card.Text style={{textAlign: 'left'}} ><b>${idx+1}.</b> 
+                    <span dangerouslySetInnerHTML={{
+                    __html:i,
+                    }}/>
+                  </Card.Text>
                   ))
                 }
                 
