@@ -11,7 +11,7 @@ const ReceipeComponent = ({recipe}) => {
     <div className="ReceipeComponent">
         <Card style={{margin: 20, maxWidth: 500, }}>
           <Card.Header>{recipe.title}</Card.Header>
-          <Card.Img variant="top" src={require(`../../assets/full${recipe.image}`).default} />
+          <Card.Img variant="top" src={require(`../../assets/data${recipe.image}`).default} />
           <Card.Body>
             {/* <Card.Title>Special title treatment</Card.Title>
             <Card.Text>
@@ -20,7 +20,7 @@ const ReceipeComponent = ({recipe}) => {
             <Button 
               variant="primary"
               onClick={()=> {
-                setRecipe(require(`../../assets/full${recipe.source}`))
+                setRecipe(require(`../../assets/data${recipe.source}`))
                 history.push(`/receipe/${recipe.id}`)
               }}
             >

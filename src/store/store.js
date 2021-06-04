@@ -10,7 +10,7 @@ class MainStore {
   }
 
   setCategory = (c) => {
-    this.category = require(`../assets/full${c.source}`)
+    this.category = require(`../assets/data${c.source}`)
     // console.log('this category',this.category)
   }
 }

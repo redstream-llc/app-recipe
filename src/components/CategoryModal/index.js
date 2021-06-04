@@ -1,7 +1,7 @@
 import React from 'react';
 import {useHistory} from "react-router-dom";
 import {Modal} from 'react-bootstrap';
-import categories from '../../assets/full/category/index.json'
+import categories from '../../assets/data/category/index.json'
 import Store from '../../store/store'
 
 const CategoryModal = (props) => {

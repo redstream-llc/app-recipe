@@ -15,7 +15,7 @@ const Receipe = observer(() => {
         <Row>
           <Col style={{display: 'flex', justifyContent: 'center'}}>
             <Card style={{maxWidth: 800}}>
-              <Card.Img variant="top" src={require(`../../assets/full${receipe.image}`).default} />
+              <Card.Img variant="top" src={require(`../../assets/data${receipe.image}`).default} />
               <Card.Body>
                 <Card.Title>{receipe?.title}</Card.Title>
                 <br/>

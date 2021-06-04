@@ -1,0 +1,15 @@
+.wrapper {
+  background: lightblue url('./background.jpg') repeat;
+}
+
+.banner {
+  background: url('./banner.jpg');
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: red;
+}

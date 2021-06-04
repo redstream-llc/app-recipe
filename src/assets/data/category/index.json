@@ -1,0 +1,62 @@
+[
+    {
+        "id": 21,
+        "title": "Appetizer",
+        "count": 19,
+        "source": "\/category\/21.json"
+    },
+    {
+        "id": 9,
+        "title": "Verduras",
+        "count": 84,
+        "source": "\/category\/9.json"
+    },
+    {
+        "id": 13,
+        "title": "Primeros",
+        "count": 58,
+        "source": "\/category\/13.json"
+    },
+    {
+        "id": 22,
+        "title": "Aperitivos",
+        "count": 15,
+        "source": "\/category\/22.json"
+    },
+    {
+        "id": 11,
+        "title": "Dessert",
+        "count": 78,
+        "source": "\/category\/11.json"
+    },
+    {
+        "id": 20,
+        "title": "Sopas",
+        "count": 12,
+        "source": "\/category\/20.json"
+    },
+    {
+        "id": 12,
+        "title": "Main",
+        "count": 150,
+        "source": "\/category\/12.json"
+    },
+    {
+        "id": 16,
+        "title": "Plato",
+        "count": 19,
+        "source": "\/category\/16.json"
+    },
+    {
+        "id": 17,
+        "title": "Tapas",
+        "count": 35,
+        "source": "\/category\/17.json"
+    },
+    {
+        "id": 18,
+        "title": "Pescados",
+        "count": 32,
+        "source": "\/category\/18.json"
+    }
+]
