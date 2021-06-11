@@ -13,7 +13,7 @@ const RecipeComponent = ({recipe}) => {
     <div className="ReceipeComponent">
         <Card style={{margin: 20, maxWidth: 500 }}>
           <Card.Header>{recipe.title}</Card.Header>
-          <Card.Img variant="top" src={`/data${recipe.image}`} />
+          <Card.Img variant="top" src={`data${recipe.image}`} />
           <Card.Body>
             <Button
               variant="primary"

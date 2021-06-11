@@ -27,7 +27,7 @@ const Recipe = () => {
         <Row>
           <Col style={{display: 'flex', justifyContent: 'center'}}>
             <Card style={{maxWidth: 800}}>
-              <Card.Img variant="top" src={`/data${recipe.image}`} />
+              <Card.Img variant="top" src={`data${recipe.image}`} />
               <Card.Body>
                 <Card.Title>{recipe.title}</Card.Title>
 
